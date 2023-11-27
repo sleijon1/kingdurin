@@ -4,6 +4,8 @@ I have mostly been working with Flask and uWSGI in my Python web adventures whic
 
 So in this project my aim is to test out the asyncness of FastAPI. 
 
+([Fun conversations on ASGI vs uWSGI](https://www.reddit.com/r/flask/comments/xvw1vi/misunderstandings_about_how_async_works_with/))
+
 ## Main idea
 
 Launch two applications running FastAPI.
@@ -16,3 +18,4 @@ each `/dig` request will start the slow process of mining Mithril from the deep 
 
 The expected result is obvious: We should be able to post countless `/dig` requests to the first application and see them all processed while
 the second application will be stuck at how many processes we are running the API with.
+
